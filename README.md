@@ -10,6 +10,7 @@ curl -X GET  http://localhost:3000/nm/Vitaly
 
 - проверка в docker container
 docker compose build
+
 docker compose up
 
 d push localhost:5001/myfiber
