@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  myfiber:
+    build: 
+        context: .
+        dockerfile: Dockerfile
+    image: ${REPO}/${MYNAME}:${VERSION}
+    container_name: ${MYNAME}
+    restart: "no"
+    environment:
+      TZ: Europe/Moscow
+    ports:
+      - "6666:3001"
